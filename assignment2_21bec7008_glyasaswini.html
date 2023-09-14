@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>365618</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="cell markdown" id="K_92Z93AdBlk">
+<p>Name: Ganti Lakshmi Yasaswini</p>
+<p>Reg no: 21BEC7008</p>
+<p>email id: <a href="mailto:yasaswini.21bec7008@vitapstudent.ac.in" class="email">yasaswini.21bec7008@vitapstudent.ac.in</a></p>
+</div>
+<div class="cell code" data-execution_count="1" id="1semGNxsACjc">
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import necessary libraries</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code></pre></div>
+</div>
+<div class="cell code" data-execution_count="33" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}" id="Is0iWbE1AD76" data-outputId="b461214d-00f6-4745-8950-aa970c8f632b">
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Step 1: Load the car_crashes dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>car_crashes <span class="op">=</span> sns.load_dataset(<span class="st">&quot;car_crashes&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>car_crashes</span></code></pre></div>
+<div class="output execute_result" data-execution_count="33">
+
+  <div id="df-d3551787-83fc-45ab-bbfb-865796c42214" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total</th>
+      <th>speeding</th>
+      <th>alcohol</th>
+      <th>not_distracted</th>
+      <th>no_previous</th>
+      <th>ins_premium</th>
+      <th>ins_losses</th>
+      <th>abbrev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18.8</td>
+      <td>7.332</td>
+      <td>5.640</td>
+      <td>18.048</td>
+      <td>15.040</td>
+      <td>784.55</td>
+      <td>145.08</td>
+      <td>AL</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>18.1</td>
+      <td>7.421</td>
+      <td>4.525</td>
+      <td>16.290</td>
+      <td>17.014</td>
+      <td>1053.48</td>
+      <td>133.93</td>
+      <td>AK</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>18.6</td>
+      <td>6.510</td>
+      <td>5.208</td>
+      <td>15.624</td>
+      <td>17.856</td>
+      <td>899.47</td>
+      <td>110.35</td>
+      <td>AZ</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>22.4</td>
+      <td>4.032</td>
+      <td>5.824</td>
+      <td>21.056</td>
+      <td>21.280</td>
+      <td>827.34</td>
+      <td>142.39</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12.0</td>
+      <td>4.200</td>
+      <td>3.360</td>
+      <td>10.920</td>
+      <td>10.680</td>
+      <td>878.41</td>
+      <td>165.63</td>
+      <td>CA</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>13.6</td>
+      <td>5.032</td>
+      <td>3.808</td>
+      <td>10.744</td>
+      <td>12.920</td>
+      <td>835.50</td>
+      <td>139.91</td>
+      <td>CO</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>10.8</td>
+      <td>4.968</td>
+      <td>3.888</td>
+      <td>9.396</td>
+      <td>8.856</td>
+      <td>1068.73</td>
+      <td>167.02</td>
+      <td>CT</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>16.2</td>
+      <td>6.156</td>
+      <td>4.860</td>
+      <td>14.094</td>
+      <td>16.038</td>
+      <td>1137.87</td>
+      <td>151.48</td>
+      <td>DE</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>5.9</td>
+      <td>2.006</td>
+      <td>1.593</td>
+      <td>5.900</td>
+      <td>5.900</td>
+      <td>1273.89</td>
+      <td>136.05</td>
+      <td>DC</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>17.9</td>
+      <td>3.759</td>
+      <td>5.191</td>
+      <td>16.468</td>
+      <td>16.826</td>
+      <td>1160.13</td>
+      <td>144.18</td>
+      <td>FL</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>15.6</td>
+      <td>2.964</td>
+      <td>3.900</td>
+      <td>14.820</td>
+      <td>14.508</td>
+      <td>913.15</td>
+      <td>142.80</td>
+      <td>GA</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>17.5</td>
+      <td>9.450</td>
+      <td>7.175</td>
+      <td>14.350</td>
+      <td>15.225</td>
+      <td>861.18</td>
+      <td>120.92</td>
+      <td>HI</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>15.3</td>
+      <td>5.508</td>
+      <td>4.437</td>
+      <td>13.005</td>
+      <td>14.994</td>
+      <td>641.96</td>
+      <td>82.75</td>
+      <td>ID</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>12.8</td>
+      <td>4.608</td>
+      <td>4.352</td>
+      <td>12.032</td>
+      <td>12.288</td>
+      <td>803.11</td>
+      <td>139.15</td>
+      <td>IL</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>14.5</td>
+      <td>3.625</td>
+      <td>4.205</td>
+      <td>13.775</td>
+      <td>13.775</td>
+      <td>710.46</td>
+      <td>108.92</td>
+      <td>IN</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>15.7</td>
+      <td>2.669</td>
+      <td>3.925</td>
+      <td>15.229</td>
+      <td>13.659</td>
+      <td>649.06</td>
+      <td>114.47</td>
+      <td>IA</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17.8</td>
+      <td>4.806</td>
+      <td>4.272</td>
+      <td>13.706</td>
+      <td>15.130</td>
+      <td>780.45</td>
+      <td>133.80</td>
+      <td>KS</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>21.4</td>
+      <td>4.066</td>
+      <td>4.922</td>
+      <td>16.692</td>
+      <td>16.264</td>
+      <td>872.51</td>
+      <td>137.13</td>
+      <td>KY</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>20.5</td>
+      <td>7.175</td>
+      <td>6.765</td>
+      <td>14.965</td>
+      <td>20.090</td>
+      <td>1281.55</td>
+      <td>194.78</td>
+      <td>LA</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>15.1</td>
+      <td>5.738</td>
+      <td>4.530</td>
+      <td>13.137</td>
+      <td>12.684</td>
+      <td>661.88</td>
+      <td>96.57</td>
+      <td>ME</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>12.5</td>
+      <td>4.250</td>
+      <td>4.000</td>
+      <td>8.875</td>
+      <td>12.375</td>
+      <td>1048.78</td>
+      <td>192.70</td>
+      <td>MD</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>8.2</td>
+      <td>1.886</td>
+      <td>2.870</td>
+      <td>7.134</td>
+      <td>6.560</td>
+      <td>1011.14</td>
+      <td>135.63</td>
+      <td>MA</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>14.1</td>
+      <td>3.384</td>
+      <td>3.948</td>
+      <td>13.395</td>
+      <td>10.857</td>
+      <td>1110.61</td>
+      <td>152.26</td>
+      <td>MI</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td>9.6</td>
+      <td>2.208</td>
+      <td>2.784</td>
+      <td>8.448</td>
+      <td>8.448</td>
+      <td>777.18</td>
+      <td>133.35</td>
+      <td>MN</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>17.6</td>
+      <td>2.640</td>
+      <td>5.456</td>
+      <td>1.760</td>
+      <td>17.600</td>
+      <td>896.07</td>
+      <td>155.77</td>
+      <td>MS</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td>16.1</td>
+      <td>6.923</td>
+      <td>5.474</td>
+      <td>14.812</td>
+      <td>13.524</td>
+      <td>790.32</td>
+      <td>144.45</td>
+      <td>MO</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>21.4</td>
+      <td>8.346</td>
+      <td>9.416</td>
+      <td>17.976</td>
+      <td>18.190</td>
+      <td>816.21</td>
+      <td>85.15</td>
+      <td>MT</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td>14.9</td>
+      <td>1.937</td>
+      <td>5.215</td>
+      <td>13.857</td>
+      <td>13.410</td>
+      <td>732.28</td>
+      <td>114.82</td>
+      <td>NE</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>14.7</td>
+      <td>5.439</td>
+      <td>4.704</td>
+      <td>13.965</td>
+      <td>14.553</td>
+      <td>1029.87</td>
+      <td>138.71</td>
+      <td>NV</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>11.6</td>
+      <td>4.060</td>
+      <td>3.480</td>
+      <td>10.092</td>
+      <td>9.628</td>
+      <td>746.54</td>
+      <td>120.21</td>
+      <td>NH</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>11.2</td>
+      <td>1.792</td>
+      <td>3.136</td>
+      <td>9.632</td>
+      <td>8.736</td>
+      <td>1301.52</td>
+      <td>159.85</td>
+      <td>NJ</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>18.4</td>
+      <td>3.496</td>
+      <td>4.968</td>
+      <td>12.328</td>
+      <td>18.032</td>
+      <td>869.85</td>
+      <td>120.75</td>
+      <td>NM</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>12.3</td>
+      <td>3.936</td>
+      <td>3.567</td>
+      <td>10.824</td>
+      <td>9.840</td>
+      <td>1234.31</td>
+      <td>150.01</td>
+      <td>NY</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td>16.8</td>
+      <td>6.552</td>
+      <td>5.208</td>
+      <td>15.792</td>
+      <td>13.608</td>
+      <td>708.24</td>
+      <td>127.82</td>
+      <td>NC</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td>23.9</td>
+      <td>5.497</td>
+      <td>10.038</td>
+      <td>23.661</td>
+      <td>20.554</td>
+      <td>688.75</td>
+      <td>109.72</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td>14.1</td>
+      <td>3.948</td>
+      <td>4.794</td>
+      <td>13.959</td>
+      <td>11.562</td>
+      <td>697.73</td>
+      <td>133.52</td>
+      <td>OH</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>19.9</td>
+      <td>6.368</td>
+      <td>5.771</td>
+      <td>18.308</td>
+      <td>18.706</td>
+      <td>881.51</td>
+      <td>178.86</td>
+      <td>OK</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td>12.8</td>
+      <td>4.224</td>
+      <td>3.328</td>
+      <td>8.576</td>
+      <td>11.520</td>
+      <td>804.71</td>
+      <td>104.61</td>
+      <td>OR</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td>18.2</td>
+      <td>9.100</td>
+      <td>5.642</td>
+      <td>17.472</td>
+      <td>16.016</td>
+      <td>905.99</td>
+      <td>153.86</td>
+      <td>PA</td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td>11.1</td>
+      <td>3.774</td>
+      <td>4.218</td>
+      <td>10.212</td>
+      <td>8.769</td>
+      <td>1148.99</td>
+      <td>148.58</td>
+      <td>RI</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>23.9</td>
+      <td>9.082</td>
+      <td>9.799</td>
+      <td>22.944</td>
+      <td>19.359</td>
+      <td>858.97</td>
+      <td>116.29</td>
+      <td>SC</td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td>19.4</td>
+      <td>6.014</td>
+      <td>6.402</td>
+      <td>19.012</td>
+      <td>16.684</td>
+      <td>669.31</td>
+      <td>96.87</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>19.5</td>
+      <td>4.095</td>
+      <td>5.655</td>
+      <td>15.990</td>
+      <td>15.795</td>
+      <td>767.91</td>
+      <td>155.57</td>
+      <td>TN</td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td>19.4</td>
+      <td>7.760</td>
+      <td>7.372</td>
+      <td>17.654</td>
+      <td>16.878</td>
+      <td>1004.75</td>
+      <td>156.83</td>
+      <td>TX</td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td>11.3</td>
+      <td>4.859</td>
+      <td>1.808</td>
+      <td>9.944</td>
+      <td>10.848</td>
+      <td>809.38</td>
+      <td>109.48</td>
+      <td>UT</td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td>13.6</td>
+      <td>4.080</td>
+      <td>4.080</td>
+      <td>13.056</td>
+      <td>12.920</td>
+      <td>716.20</td>
+      <td>109.61</td>
+      <td>VT</td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td>12.7</td>
+      <td>2.413</td>
+      <td>3.429</td>
+      <td>11.049</td>
+      <td>11.176</td>
+      <td>768.95</td>
+      <td>153.72</td>
+      <td>VA</td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td>10.6</td>
+      <td>4.452</td>
+      <td>3.498</td>
+      <td>8.692</td>
+      <td>9.116</td>
+      <td>890.03</td>
+      <td>111.62</td>
+      <td>WA</td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td>23.8</td>
+      <td>8.092</td>
+      <td>6.664</td>
+      <td>23.086</td>
+      <td>20.706</td>
+      <td>992.61</td>
+      <td>152.56</td>
+      <td>WV</td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td>13.8</td>
+      <td>4.968</td>
+      <td>4.554</td>
+      <td>5.382</td>
+      <td>11.592</td>
+      <td>670.31</td>
+      <td>106.62</td>
+      <td>WI</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>17.4</td>
+      <td>7.308</td>
+      <td>5.568</td>
+      <td>14.094</td>
+      <td>15.660</td>
+      <td>791.14</td>
+      <td>122.04</td>
+      <td>WY</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d3551787-83fc-45ab-bbfb-865796c42214')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d3551787-83fc-45ab-bbfb-865796c42214 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d3551787-83fc-45ab-bbfb-865796c42214');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-2bd312fd-84fa-4028-ba67-b4d156fbc248">
+  <button class="colab-df-quickchart" onclick="quickchart('df-2bd312fd-84fa-4028-ba67-b4d156fbc248')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-2bd312fd-84fa-4028-ba67-b4d156fbc248 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="14" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}" id="zbLc9toyV-_S" data-outputId="6e7737b3-c32f-42b6-e907-7e95c93ce479">
+<div class="sourceCode" id="cb3"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>car_crashes.info</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+<pre><code>&lt;bound method DataFrame.info of     total  speeding  alcohol  not_distracted  no_previous  ins_premium  \
+0    18.8     7.332    5.640          18.048       15.040       784.55   
+1    18.1     7.421    4.525          16.290       17.014      1053.48   
+2    18.6     6.510    5.208          15.624       17.856       899.47   
+3    22.4     4.032    5.824          21.056       21.280       827.34   
+4    12.0     4.200    3.360          10.920       10.680       878.41   
+5    13.6     5.032    3.808          10.744       12.920       835.50   
+6    10.8     4.968    3.888           9.396        8.856      1068.73   
+7    16.2     6.156    4.860          14.094       16.038      1137.87   
+8     5.9     2.006    1.593           5.900        5.900      1273.89   
+9    17.9     3.759    5.191          16.468       16.826      1160.13   
+10   15.6     2.964    3.900          14.820       14.508       913.15   
+11   17.5     9.450    7.175          14.350       15.225       861.18   
+12   15.3     5.508    4.437          13.005       14.994       641.96   
+13   12.8     4.608    4.352          12.032       12.288       803.11   
+14   14.5     3.625    4.205          13.775       13.775       710.46   
+15   15.7     2.669    3.925          15.229       13.659       649.06   
+16   17.8     4.806    4.272          13.706       15.130       780.45   
+17   21.4     4.066    4.922          16.692       16.264       872.51   
+18   20.5     7.175    6.765          14.965       20.090      1281.55   
+19   15.1     5.738    4.530          13.137       12.684       661.88   
+20   12.5     4.250    4.000           8.875       12.375      1048.78   
+21    8.2     1.886    2.870           7.134        6.560      1011.14   
+22   14.1     3.384    3.948          13.395       10.857      1110.61   
+23    9.6     2.208    2.784           8.448        8.448       777.18   
+24   17.6     2.640    5.456           1.760       17.600       896.07   
+25   16.1     6.923    5.474          14.812       13.524       790.32   
+26   21.4     8.346    9.416          17.976       18.190       816.21   
+27   14.9     1.937    5.215          13.857       13.410       732.28   
+28   14.7     5.439    4.704          13.965       14.553      1029.87   
+29   11.6     4.060    3.480          10.092        9.628       746.54   
+30   11.2     1.792    3.136           9.632        8.736      1301.52   
+31   18.4     3.496    4.968          12.328       18.032       869.85   
+32   12.3     3.936    3.567          10.824        9.840      1234.31   
+33   16.8     6.552    5.208          15.792       13.608       708.24   
+34   23.9     5.497   10.038          23.661       20.554       688.75   
+35   14.1     3.948    4.794          13.959       11.562       697.73   
+36   19.9     6.368    5.771          18.308       18.706       881.51   
+37   12.8     4.224    3.328           8.576       11.520       804.71   
+38   18.2     9.100    5.642          17.472       16.016       905.99   
+39   11.1     3.774    4.218          10.212        8.769      1148.99   
+40   23.9     9.082    9.799          22.944       19.359       858.97   
+41   19.4     6.014    6.402          19.012       16.684       669.31   
+42   19.5     4.095    5.655          15.990       15.795       767.91   
+43   19.4     7.760    7.372          17.654       16.878      1004.75   
+44   11.3     4.859    1.808           9.944       10.848       809.38   
+45   13.6     4.080    4.080          13.056       12.920       716.20   
+46   12.7     2.413    3.429          11.049       11.176       768.95   
+47   10.6     4.452    3.498           8.692        9.116       890.03   
+48   23.8     8.092    6.664          23.086       20.706       992.61   
+49   13.8     4.968    4.554           5.382       11.592       670.31   
+50   17.4     7.308    5.568          14.094       15.660       791.14   
+
+    ins_losses abbrev  
+0       145.08     AL  
+1       133.93     AK  
+2       110.35     AZ  
+3       142.39     AR  
+4       165.63     CA  
+5       139.91     CO  
+6       167.02     CT  
+7       151.48     DE  
+8       136.05     DC  
+9       144.18     FL  
+10      142.80     GA  
+11      120.92     HI  
+12       82.75     ID  
+13      139.15     IL  
+14      108.92     IN  
+15      114.47     IA  
+16      133.80     KS  
+17      137.13     KY  
+18      194.78     LA  
+19       96.57     ME  
+20      192.70     MD  
+21      135.63     MA  
+22      152.26     MI  
+23      133.35     MN  
+24      155.77     MS  
+25      144.45     MO  
+26       85.15     MT  
+27      114.82     NE  
+28      138.71     NV  
+29      120.21     NH  
+30      159.85     NJ  
+31      120.75     NM  
+32      150.01     NY  
+33      127.82     NC  
+34      109.72     ND  
+35      133.52     OH  
+36      178.86     OK  
+37      104.61     OR  
+38      153.86     PA  
+39      148.58     RI  
+40      116.29     SC  
+41       96.87     SD  
+42      155.57     TN  
+43      156.83     TX  
+44      109.48     UT  
+45      109.61     VT  
+46      153.72     VA  
+47      111.62     WA  
+48      152.56     WV  
+49      106.62     WI  
+50      122.04     WY  &gt;</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="15" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}" id="7d9pq5AqWWbs" data-outputId="11720a6d-2601-4073-c8a7-7353212e455c">
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>car_crashes.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="15">
+
+  <div id="df-bc7113cf-9d5f-4cf3-9030-326e3e6a9d75" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>total</th>
+      <th>speeding</th>
+      <th>alcohol</th>
+      <th>not_distracted</th>
+      <th>no_previous</th>
+      <th>ins_premium</th>
+      <th>ins_losses</th>
+      <th>abbrev</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>18.8</td>
+      <td>7.332</td>
+      <td>5.640</td>
+      <td>18.048</td>
+      <td>15.040</td>
+      <td>784.55</td>
+      <td>145.08</td>
+      <td>AL</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>18.1</td>
+      <td>7.421</td>
+      <td>4.525</td>
+      <td>16.290</td>
+      <td>17.014</td>
+      <td>1053.48</td>
+      <td>133.93</td>
+      <td>AK</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>18.6</td>
+      <td>6.510</td>
+      <td>5.208</td>
+      <td>15.624</td>
+      <td>17.856</td>
+      <td>899.47</td>
+      <td>110.35</td>
+      <td>AZ</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>22.4</td>
+      <td>4.032</td>
+      <td>5.824</td>
+      <td>21.056</td>
+      <td>21.280</td>
+      <td>827.34</td>
+      <td>142.39</td>
+      <td>AR</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>12.0</td>
+      <td>4.200</td>
+      <td>3.360</td>
+      <td>10.920</td>
+      <td>10.680</td>
+      <td>878.41</td>
+      <td>165.63</td>
+      <td>CA</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-bc7113cf-9d5f-4cf3-9030-326e3e6a9d75')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-bc7113cf-9d5f-4cf3-9030-326e3e6a9d75 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-bc7113cf-9d5f-4cf3-9030-326e3e6a9d75');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-57eb6d72-1272-43b2-928e-e84366d26b88">
+  <button class="colab-df-quickchart" onclick="quickchart('df-57eb6d72-1272-43b2-928e-e84366d26b88')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-57eb6d72-1272-43b2-928e-e84366d26b88 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="34" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:448}" id="9BBAoqRgvuew" data-outputId="44b1e223-e302-49be-efc8-28ea78814383">
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> car_crashes[<span class="st">&#39;alcohol&#39;</span>]</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> car_crashes[<span class="st">&#39;speeding&#39;</span>]</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y,<span class="st">&#39;g-*&#39;</span>,ms<span class="op">=</span><span class="dv">10</span>)</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Inference: The scatter plot shows the relationship between alcohol involvement and speeding involvement in car crashes.</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="34">
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x789573727f70&gt;]</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="f6ea7ed68dcd2f486120d33153400cab5c40bae6.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="29" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:434}" id="5AmSehG8wmeN" data-outputId="c7b16e05-41b5-488c-a0cd-ea50bd862c83">
+<div class="sourceCode" id="cb8"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> car_crashes[<span class="st">&#39;not_distracted&#39;</span>]</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> car_crashes[<span class="st">&#39;no_previous&#39;</span>]</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>plt.plot(a,b,<span class="st">&#39;g-&gt;&#39;</span>,ms<span class="op">=</span><span class="dv">5</span>,mec<span class="op">=</span><span class="st">&#39;b&#39;</span>)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>plt.grid()</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co">#The graph represents the relationship between two variables, &#39;not_distracted&#39; and &#39;no_previous,&#39; in car crashes.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="2ca431a0c9156594fc619b0857bf665a15b67892.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="35" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:448}" id="GPYzuc-B1arF" data-outputId="8f523351-4060-4b0c-9145-68630fc4fd15">
+<div class="sourceCode" id="cb9"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">1</span>)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y,<span class="st">&#39;g--&#39;</span>)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">2</span>)</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>plt.plot(x,y,<span class="st">&#39;b*&#39;</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">3</span>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>plt.plot(a,b,<span class="st">&#39;b*&#39;</span>)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>plt.subplot(<span class="dv">2</span>,<span class="dv">2</span>,<span class="dv">4</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>plt.plot(a,b,<span class="st">&#39;g--&#39;</span>)</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Inferene:  2x2 grid of subplots, with each subplot displaying a relationship between two variables x,y and a,b</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="35">
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x789573c363e0&gt;]</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="40a12766c1312dbbbb0ff03e7b063bfdd0417f07.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="38" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:462}" id="a50QP8rv1vg5" data-outputId="2bcb816b-0394-43e5-ff92-5877e4dc2553">
+<div class="sourceCode" id="cb11"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>fig<span class="op">=</span>plt.figure()</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>ax1<span class="op">=</span>fig.add_axes([<span class="fl">0.1</span>,<span class="fl">0.1</span>,<span class="fl">0.8</span>,<span class="fl">0.8</span>])</span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>ax2<span class="op">=</span>fig.add_axes([<span class="fl">0.2</span>,<span class="fl">0.5</span>,<span class="fl">0.4</span>,<span class="fl">0.3</span>])</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="co">#[left,bottom,width,height]</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>ax1.plot(x,y)</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>ax2.plot(a,b)</span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Inference: creating the subplot of two axes x,y and a,b</span></span></code></pre></div>
+<div class="output execute_result" data-execution_count="38">
+<pre><code>[&lt;matplotlib.lines.Line2D at 0x78957305b4f0&gt;]</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="4cb3abbfc6ae2522daf2fffe5bee10f3b1a1971e.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="23" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}" id="inSvJwbuATzy" data-outputId="6946c322-0f92-44e7-8dfe-633f17d4fe78">
+<div class="sourceCode" id="cb13"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot : Histogram of &#39;total&#39; car crashes</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;total&quot;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Total Car Crashes&quot;</span>)</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Frequency&quot;</span>)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This histogram shows the distribution of total car crashes. Most states have a relatively low number of car crashes, with a few outliers having significantly higher crash rates.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="cff4250a624235ff663d91e83a2a1e21348c396a.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="22" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:553}" id="oMiqJTblAbVr" data-outputId="8e49473c-5208-42bc-f0dc-092cd258c981">
+<div class="sourceCode" id="cb14"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot : Barplot of average &#39;total&#39; car crashes by &#39;abbrev&#39; (State Abbreviation)</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>sns.barplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;abbrev&quot;</span>, y<span class="op">=</span><span class="st">&quot;total&quot;</span>, ci<span class="op">=</span><span class="va">None</span>)</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;State Abbreviation&quot;</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Average Total Car Crashes&quot;</span>)</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This barplot displays the average total car crashes by state. We can see variations in car crash rates among different states, with some states having higher averages than others.</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-22-45887d3389a5&gt;:2: FutureWarning: 
+
+The `ci` parameter is deprecated. Use `errorbar=None` for the same effect.
+
+  sns.barplot(data=car_crashes, x=&quot;abbrev&quot;, y=&quot;total&quot;, ci=None)
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="e2c45dcecfbc406299b6dc641442238663ba793a.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="21" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:451}" id="YvAno6G-Ad9L" data-outputId="90289c3a-be5b-4a4c-8786-58042eb2a096">
+<div class="sourceCode" id="cb16"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot : Boxplot of &#39;alcohol&#39; involvement in car crashes</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>, y<span class="op">=</span><span class="st">&quot;abbrev&quot;</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Alcohol Involvement&quot;</span>)</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;State Abbreviation&quot;</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This boxplot provides information on the distribution of alcohol involvement in car crashes across states. It helps identify states where alcohol is a significant factor in car accidents.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="65bbd88aee8fa880cc51737a43fcc2fdcbf28fee.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="20" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}" id="k1YjE87lAfvt" data-outputId="9fc43a69-763e-4b2b-efd6-050db09615cf">
+<div class="sourceCode" id="cb17"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot : Scatterplot of &#39;speeding&#39; vs &#39;alcohol&#39; involvement</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;speeding&quot;</span>, y<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>, hue<span class="op">=</span><span class="st">&quot;abbrev&quot;</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Speeding Involvement&quot;</span>)</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Alcohol Involvement&quot;</span>)</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&quot;State&quot;</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This scatterplot shows the relationship between speeding and alcohol involvement in car crashes for each state. It helps identify any potential correlation or patterns between these variables.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="04e4a4fc166bb75473548704b2bf111f6b9b36fb.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="19" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}" id="v3dv3U97BMJU" data-outputId="7a1f474c-aa17-4696-b23e-4d2ce2029560">
+<div class="sourceCode" id="cb18"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization : Distribution of Alcohol Involvement</span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>sns.histplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>, kde<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Alcohol Involvement&quot;</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Frequency&quot;</span>)</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This histogram provides a closer look at the distribution of alcohol involvement in car crashes. It helps identify the most common levels of alcohol involvement.</span></span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a></span></code></pre></div>
+<div class="output display_data">
+<p><img src="0027db6e3c95e44cdda9133001fac0584b0f389c.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="18" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:449}" id="avzA_XJ5BRSs" data-outputId="685296c9-ebcd-4f4c-9588-41dd651a2adc">
+<div class="sourceCode" id="cb19"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization : Boxplot of Speeding Involvement</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>sns.boxplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;speeding&quot;</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Speeding Involvement&quot;</span>)</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : The boxplot shows the spread of speeding involvement in car crashes. It helps identify the presence of outliers and the distribution of speeding rates.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="af4cb7510c2c76a5034a82ce213427d820db9d5b.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="17" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:459}" id="TS9F2PApBQTb" data-outputId="a11a9a36-904f-4527-8839-481488264890">
+<div class="sourceCode" id="cb20"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization : Countplot of States (Abbreviations)</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>sns.countplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;abbrev&quot;</span>, order<span class="op">=</span>car_crashes[<span class="st">&#39;abbrev&#39;</span>].value_counts().index)</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;State Abbreviation&quot;</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Count&quot;</span>)</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>plt.xticks(rotation<span class="op">=</span><span class="dv">90</span>)</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference: This countplot displays the frequency of car crashes by state. It helps identify which states have the highest and lowest counts of car crashes.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="23f8ed6f59abfb251e45faf61630b8f149eb4a7f.png" /></p>
+</div>
+</div>
+<div class="cell code" data-execution_count="16" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:577}" id="U7EXQ8FxBQKi" data-outputId="2058e2e6-ba44-4cc4-f5a5-23c6ca10c6bf">
+<div class="sourceCode" id="cb21"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization : Correlation Heatmap</span></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>correlation_matrix <span class="op">=</span> car_crashes.corr()</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>sns.heatmap(correlation_matrix, annot<span class="op">=</span><span class="va">True</span>, cmap<span class="op">=</span><span class="st">&quot;coolwarm&quot;</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : The heatmap shows the correlation between numerical variables in the dataset. It can help identify strong positive or negative correlations between variables.</span></span></code></pre></div>
+<div class="output stream stderr">
+<pre><code>&lt;ipython-input-16-48eede59fa6a&gt;:2: FutureWarning: The default value of numeric_only in DataFrame.corr is deprecated. In a future version, it will default to False. Select only valid columns or specify the value of numeric_only to silence this warning.
+  correlation_matrix = car_crashes.corr()
+</code></pre>
+</div>
+<div class="output display_data">
+<p><img src="1c762fb5870a7ad870e4741b3ede8deabe84f9e7.png" /></p>
+</div>
+</div>
+<div class="cell code" data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:1000}" id="pxrJFfLMBP9S" data-outputId="02a8ef9a-cc95-42a7-87e7-cc9e6995032a">
+<div class="sourceCode" id="cb23"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualization: Violinplot of Alcohol vs. Speeding by State (Abbreviation)</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>sns.violinplot(data<span class="op">=</span>car_crashes, x<span class="op">=</span><span class="st">&quot;alcohol&quot;</span>, y<span class="op">=</span><span class="st">&quot;speeding&quot;</span>, hue<span class="op">=</span><span class="st">&quot;abbrev&quot;</span>)</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&quot;Violinplot of Alcohol vs. Speeding by State&quot;</span>)</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&quot;Alcohol Involvement&quot;</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&quot;Speeding Involvement&quot;</span>)</span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">&quot;State Abbreviation&quot;</span>)</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Inference : This violinplot displays the distribution of alcohol and speeding involvement in car crashes by state. It helps us understand variations in these factors among different states.</span></span></code></pre></div>
+<div class="output display_data">
+<p><img src="a7dcb3e46a55d52eece3c085d444d70bbfecf73d.png" /></p>
+</div>
+</div>
+</body>
+</html>
